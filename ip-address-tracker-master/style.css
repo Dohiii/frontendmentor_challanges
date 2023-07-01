@@ -1,0 +1,264 @@
+/* CSS Reset */
+
+/* Remove default margin, padding, and border */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* Set default font family and size */
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Reset lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset hyperlink styles */
+a {
+  text-decoration: none;
+}
+
+/* Reset form elements */
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background-image: url("./images/pattern-bg-mobile.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  height: 150px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hero .sibmit-ip-form {
+  display: flex;
+  align-items: center;
+}
+
+.sibmit-ip-form input[type="text"] {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.sibmit-ip-form button {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.card {
+  position: absolute; /* Change to absolute positioning */
+  top: 150px; /* Position the card 30% below the container */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60%; /* Adjust the width as desired */
+  height: 150px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: #000 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card label {
+  color: hsl(0, 1%, 75%);
+  font-size: 10px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.card p {
+  margin-bottom: 9px;
+  font-weight: 700;
+}
+
+#map {
+  height: 500px;
+  z-index: 0;
+}
+
+@media (max-width: 767px) {
+  /* CSS rules for mobile devices */
+  /* For example, you can hide or modify certain elements */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero {
+    background-image: url("./images/pattern-bg-mobile.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+    height: 150px;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .hero .sibmit-ip-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .sibmit-ip-form input[type="text"] {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .sibmit-ip-form button {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .card {
+    position: absolute; /* Change to absolute positioning */
+    top: 150px; /* Position the card 30% below the container */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60%; /* Adjust the width as desired */
+    height: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: #000 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card label {
+    color: hsl(0, 1%, 75%);
+    font-size: 10px;
+    font-weight: 700;
+    margin: 5px;
+  }
+
+  .card p {
+    margin-bottom: 9px;
+    font-weight: 700;
+  }
+}
